@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sección de noticias y actualidades">
+    <meta name="keywords" content="noticias, actualidad, información">
+    <meta name="author" content="José Javier Jaramillo Bravo">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+    <title>Noticias</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #f6f8fd 0%, #f1f4f9 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        h1:after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, #3498db, #2980b9);
+            margin: 20px auto 0;
+            border-radius: 2px;
+        }
+        .btn-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }    .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 35px;
+            background: white;
+            color: #3498db;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 2px solid #e1e8ef;
+            min-width: 160px;
+            position: relative;
+            box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+            backdrop-filter: blur(8px);
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+        }
+        .btn:before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }    .btn:hover {
+            color: white;
+            border-color: transparent;
+            box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
+            transform: translateY(-2px);
+        }
+        .btn:hover:before {
+            opacity: 1;
+        }
+        .btn:active {
+            transform: translateY(1px);
+            box-shadow: 0 5px 10px rgba(52, 152, 219, 0.2);
+        }
+        .contenido-btn {
+            position: relative;
+            z-index: 1;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(52, 152, 219, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(52, 152, 219, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(52, 152, 219, 0); }
+        }
+        .marquee-container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+<div class="marquee-container">
+    <marquee behavior="scroll" direction="left" scrollamount="5">
+        📰 Sección de Noticias - Mantente informado con las últimas actualizaciones
+    </marquee>
+</div>
+<h1>Noticias</h1>
+<div class="btn-container">    <a href="pagina1.html" class="btn">
+        <span class="contenido-btn">Volver a Principal</span>
+    </a>
+</div>
+</body>
+</html>

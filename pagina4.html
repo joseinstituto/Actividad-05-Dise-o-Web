@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enlaces a diarios peruanos: El Comercio y El Peruano">
+    <meta name="keywords" content="diarios, periódicos, noticias, El Comercio, El Peruano, Perú">
+    <meta name="author" content="José Javier Jaramillo Bravo">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+    <title>Diarios Peruanos - Enlaces</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(135deg, #f6f8fd 0%, #f1f4f9 100%);
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            max-width: 800px;
+            width: 90%;
+            margin-top: 40px;
+        }
+
+        .marquee-container {
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11);
+        }
+
+        marquee {
+            color: #2c3e50;
+            font-size: 1.1em;
+            padding: 5px 0;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2em;
+            margin-bottom: 40px;
+            line-height: 1.4;
+        }
+
+        .diarios-container {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .diario-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 15px 30px;
+            background: white;
+            color: #2c3e50;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 2px solid #e1e8ef;
+            box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11);
+            min-width: 200px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .diario-btn:before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+            opacity: 0;
+            transition: 0.3s;
+            z-index: 1;
+        }
+
+        .diario-btn.peruano:before {
+            background: linear-gradient(45deg, #2ecc71, #27ae60);
+        }
+
+        .diario-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1);
+            color: white;
+            border-color: transparent;
+        }
+
+        .diario-btn:hover:before {
+            opacity: 1;
+        }
+
+        .diario-btn span {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .diario-btn i {
+            font-size: 1.2em;
+        }
+
+        .volver-btn {
+            margin-top: 30px;
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 24px;
+            background: transparent;
+            color: #666;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 1px solid #ddd;
+            font-size: 0.9em;
+        }
+
+        .volver-btn:hover {
+            background: #f8f9fa;
+            color: #333;
+            transform: translateY(-1px);
+        }
+
+        .nota {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 20px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="marquee-container">
+            <marquee behavior="scroll" direction="left">Bienvenidos a la sección de Diarios Peruanos - Mantente informado con las últimas noticias</marquee>
+        </div>
+        <h1>Diarios Peruanos</h1>
+        <div class="diarios-container">
+            <a href="https://elcomercio.pe/" class="diario-btn">
+                <span>
+                    <i class="fas fa-newspaper"></i>
+                    El Comercio
+                </span>
+            </a>
+            <a href="https://elperuano.pe/" class="diario-btn peruano" target="_blank">
+                <span>
+                    <i class="fas fa-external-link-alt"></i>
+                    El Peruano
+                </span>
+            </a>
+        </div>
+        <p class="nota">* El Peruano se abrirá en una nueva pestaña</p>
+        <a href="index.html" class="volver-btn">Volver al índice</a>
+    </div>
+</body>
+</html>

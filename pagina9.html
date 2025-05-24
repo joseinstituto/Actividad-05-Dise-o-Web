@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Los tres pilares fundamentales de la Web: HTML, HTTP y URL">
+    <meta name="keywords" content="HTML, HTTP, URL, Tim Berners-Lee, World Wide Web, W3C">
+    <meta name="author" content="José Javier Jaramillo Bravo">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌐</text></svg>">
+    <title>Los tres pilares de la Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 40px auto;
+            padding: 0 20px;
+            max-width: 800px;
+            background: linear-gradient(135deg, #f6f8fd 0%, #f1f4f9 100%);
+        }
+        .marquee-container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        p {
+            line-height: 1.6;
+            color: #444;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #2980b9;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        ul li:hover {
+            transform: translateX(10px);
+        }
+
+        .volver-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 24px;
+            background: white;
+            color: #2c3e50;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 2px solid #3498db;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.1);
+            margin-top: 40px;
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .volver-btn:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: linear-gradient(90deg, #3498db, #2980b9);
+            transition: width 0.3s ease;
+            z-index: -1;
+        }
+
+        .volver-btn i {
+            font-size: 1.2em;
+            transition: transform 0.3s ease;
+            color: #3498db;
+        }
+
+        .volver-btn:hover {
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.2);
+            border-color: transparent;
+        }
+
+        .volver-btn:hover:before {
+            width: 100%;
+        }
+
+        .volver-btn:hover i {
+            transform: translateX(-5px);
+            color: white;
+        }
+
+        section {
+            scroll-margin-top: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        ul.nav-pills {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        ul.nav-pills li {
+            flex: 1;
+            min-width: 100px;
+            text-align: center;
+        }
+
+        ul.nav-pills li a {
+            display: block;
+            padding: 15px;
+            background: white;
+            color: #3498db;
+            border: 2px solid #3498db;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        ul.nav-pills li a:hover {
+            background: #3498db;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="marquee-container">
+        <marquee behavior="scroll" direction="left" scrollamount="5">
+            🌐 Explora los tres pilares fundamentales de la Web: HTML, HTTP y URL - Los componentes esenciales del desarrollo web moderno
+        </marquee>
+    </div>
+    <h1>Los tres pilares de la Web</h1>
+
+    <p>
+        <a href="http://es.wikipedia.org/wiki/Tim_Berners-Lee">Tim Berners-Lee</a> es considerado el padre de la 
+        <a href="http://es.wikipedia.org/wiki/World_Wide_Web">Web</a> porque desarrolló los tres elementos básicos para el
+        funcionamiento de la Web:
+    </p>
+
+    <ul class="nav-pills">
+        <li><a href="#HTML">HTML</a></li>
+        <li><a href="#HTTP">HTTP</a></li>
+        <li><a href="#URL">URL</a></li>
+    </ul>
+    <section id="HTML">
+        <h2>HTML</h2>
+        <p>
+            HTML, siglas de HyperText Markup Language, hace referencia al lenguaje de marcado para la elaboración de
+            páginas web. Es un estándar que sirve de referencia para la elaboración de páginas web en sus diferentes
+            versiones, define una estructura básica y un código (denominado código HTML) para la definición de
+            contenido de una página web, como texto, imágenes, entre otros. Es un estándar a cargo de la W3C,
+            organización dedicada a la estandarización de casi todas las tecnologías ligadas a la web, sobre todo en lo
+            referente a su escritura e interpretación. Es el lenguaje con el que se definen las páginas web.
+        </p>
+    <p>
+        Fuente: <a href="http://es.wikipedia.org/wiki/HTML">HTML</a>, Wikipedia
+    </p>    <section id="HTTP">
+        <h2>HTTP</h2>
+        <p>
+            Hypertext Transfer Protocol o HTTP (en español protocolo de transferencia de hipertexto) es el protocolo
+            usado en cada transacción de la World Wide Web. HTTP fue desarrollado por el World Wide Web Consortium
+            y la Internet Engineering Task Force, colaboración que culminó en 1999 con la publicación de una serie de
+            RFC, el más importante de ellos es el RFC 2616 que especifica la versión 1.1.
+        </p>
+    <p>
+        Fuente: <a href="http://es.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP</a>, Wikipedia
+    </p>    <section id="URL">
+        <h2>URL</h2>
+        <p>
+            Un localizador de recursos uniforme o URL es un identificador de recursos uniforme (URI) cuyos
+            recursos referidos pueden cambiar, esto es, la dirección puede apuntar a recursos variables en el
+            tiempo. Están formados por una secuencia de caracteres, de acuerdo a un formato modélico y
+            estándar, que designa recursos en una red, como Internet.
+        </p>
+    <p>
+        Fuente: <a href="http://es.wikipedia.org/wiki/Localizador_de_recursos_uniforme">URL</a>, Wikipedia
+    </p>
+
+    <a href="index.html" class="volver-btn">
+        <i class="fas fa-arrow-left"></i>
+        Volver al índice
+    </a>
+</body>
+</html>

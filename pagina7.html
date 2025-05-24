@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Índice del Tutorial de MySQL - Enlaces a secciones de aprendizaje">
+    <meta name="keywords" content="MySQL, bases de datos, tutorial, SQL, índice">
+    <meta name="author" content="José Javier Jaramillo Bravo">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Tutorial de MySQL - Índice</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            margin: 40px auto;
+            padding: 20px;
+            max-width: 800px;
+            background: linear-gradient(135deg, #f6f8fd 0%, #f1f4f9 100%);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        a {
+            display: block;
+            color: #3498db;
+            text-decoration: none;
+            padding: 10px;
+            margin: 5px 0;
+            background: white;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        a:hover {
+            transform: translateX(10px);
+            background: #f8f9fa;
+            color: #2980b9;
+        }
+        .marquee-container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .volver-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 24px;
+            background: white;
+            color: #2c3e50;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 2px solid #3498db;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.1);
+            margin-top: 30px;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .volver-btn:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: linear-gradient(90deg, #3498db, #2980b9);
+            transition: width 0.3s ease;
+            z-index: -1;
+        }
+
+        .volver-btn i {
+            font-size: 1.2em;
+            transition: transform 0.3s ease;
+            color: #3498db;
+        }
+
+        .volver-btn:hover {
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.2);
+            border-color: transparent;
+        }
+
+        .volver-btn:hover:before {
+            width: 100%;
+        }
+
+        .volver-btn:hover i {
+            transform: translateX(-5px);
+            color: white;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div class="marquee-container">
+    <marquee behavior="scroll" direction="left" scrollamount="5">
+        📚 Navega por las secciones del tutorial de MySQL - Haz clic en cualquier tema para aprender más
+    </marquee>
+</div>
+<h1>Tutorial de MySQL</h1>
+<a href="pagina8.html#introduccion">Introducción</a><br>
+<a href="pagina8.html#mostrarbasedatos">show databases</a><br>
+<a href="pagina8.html#creaciontabla">Creación de una tabla y mostrar sus campos</a><br>
+<a href="pagina8.html#cargarregistros">Carga de registros a una tabla y su recuperación</a><br>
+
+<a href="index.html" class="volver-btn">
+    <i class="fas fa-arrow-left"></i>
+    Volver al índice
+</a>
+</body>
+</html>
